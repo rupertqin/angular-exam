@@ -1,0 +1,72 @@
+<div class="col-md-9">
+    <div class="well options">
+        <form class="form-horizontal" role="form">
+            <div class="form-group" ng-repeat="option_type in option_types">
+                <label for="inputEmail3" class="col-sm-2 control-label">{{option_type.name}}:</label>
+                <div class="col-sm-10">
+                    <a  
+                        ng-repeat="optionValue in option_type.option_values"
+                        ng-class="{
+                            active: checkActive(optionValue.id)
+                        }"
+                        class="btn btn-default" 
+                        ng-click="filterOptions(option_type, optionValue.id, $event)"
+                        >
+                        {{optionValue.value}}
+                    </a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                    <input 
+                        type="checkbox" 
+                        ng-model='selectAll'
+                        >
+                    全选
+                 </label>
+                <label class="col-sm-2 control-label">
+                    <input 
+                        type="checkbox" 
+                        ng-model='inSelect'
+                        >
+                    反选
+                 </label>
+            </div>
+            <div class="form-group">
+                <div class="dropdown pull-left">
+                    <button data-toggle="dropdown" type="button" class="btn btn-default btn-xs">
+                        <span class="glyphicon glyphicon-cog"></span> 试卷 
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href=" ">手工建卷</a></li>
+                        <li><a href=" ">导入 word 卷</a></li>
+                        <li><a href=" ">查找试卷</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown pull-left">
+                    <button data-toggle="dropdown" type="button" class="btn btn-default btn-xs">
+                        <span class="glyphicon glyphicon-cog"></span> 题库组卷
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href=" ">人工组卷</a></li>
+                        <li><a href=" ">自动组卷</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option>批量置入作业</option>
+                        <option>批量置入课程</option>
+                        <option>删除已选</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" id="inputSuccess2">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div ui-view></div>
+</div>

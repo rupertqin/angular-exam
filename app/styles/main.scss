@@ -1,0 +1,419 @@
+$mainWidth: 1100px;
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+	background: #f9f9f9;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+header {
+	.container {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+
+.question {
+	input[type=text] {
+		width: 7em;
+	}
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
+
+footer {
+	padding: 20px 0 0;
+	margin: 0;
+	border-top: 1px solid #ccc;
+	background: #fff;
+}
+
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 40px 0;
+}
+
+.marketing p + h4 {
+	margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: $mainWidth;
+	}
+
+	/* Remove the padding we set earlier */
+	.header,
+	.marketing,
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 30px;
+	}
+	/* Remove the bottom border on the jumbotron for visual effect */
+	.jumbotron {
+		border-bottom: 0;
+	}
+}
+
+.list-alpha {
+	list-style-type: upper-alpha;
+}
+
+.btn.active {
+	padding: 5px 10px;
+	margin: 1px 0!important;
+}
+
+.popover {
+	display: block;
+	min-width: 50px;
+	margin: -13px 0 0 35px!important;
+	padding: 3px 8px;
+	.popover-content {
+		padding: 0;
+		textarea {
+			resize: none;
+			width: 100%;
+			height: 100%;
+			border: none;
+			box-shadow: none;
+			font-size: 12px;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	&.left {
+		margin: -13px 35px 0 -60px!important;
+	}
+}
+#quiz {
+	counter-reset: section;
+	.question_group {
+		counter-increment: section;
+		margin-top: 60px; 
+		.group-title {
+			font-size: 23px;
+			line-height: 23px;
+			label {
+				span:before {
+					content: counter(section, cjk-ideographic) ": ";
+				}
+			}
+		}
+		.question {
+			
+			ul.list-group {
+				li.list-group-item {
+					overflow: hidden;
+					ul.choice {
+						padding-left: 0;
+					}
+				}
+				
+			}
+			&.connecting_on_pic_question {
+				.answer {
+					.factory {
+						.ball {
+							display: inline-block;
+							width: 26px;
+							height: 26px;
+							border-radius: 50%;
+							opacity: 1;
+							cursor: pointer;
+							box-sizing: content-box;
+							&.yellow {
+								background: #f0ad4e;
+							}
+							&.red {
+								background: #d9534f;
+							}
+							&.active {
+								opacity: .5;
+							}
+						}
+						.ready-ball {
+							height: 2vw;
+						}
+						.factory-container {
+							position: relative;
+							outline: 1px solid #999;
+							width: 40vw;
+							height: 30vw;
+							background-repeat: no-repeat;
+							background-position: center center;
+							&.hight-line {
+								outline: 1px solid #ff6600;
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		.panel-primary.panel {
+			margin-top: 50px; 
+			.question {
+				padding: 15px 35px;
+			}
+		}
+	}
+
+}
+
+.container {
+	width: $mainWidth;
+	counter-reset: quesec;
+	background: #fff;
+	padding: 0 25px;
+	.question {
+		counter-increment: quesec;
+		.panel-heading {
+			.btn {
+				i:before {
+					content: counter(quesec);
+				}
+			}
+		}
+	}
+}
+
+.panel {
+	overflow: hidden;
+	.panel-heading {
+		overflow: hidden;
+	}
+	.panel-body {
+		
+	}
+}
+
+ul.choice {
+	overflow: hidden;
+	li {
+		float: left;
+		margin: 0 20px 0 20px;
+	}
+}
+
+.fill_in_multiple_blanks_question {
+	ul {
+		li {
+			float: none;
+		}
+	}
+}
+
+.multiple_dropdowns_question {
+	.answer {
+		.list-blanks {
+			list-style: none;
+			counter-reset: section;
+			margin: 10px 0;
+			.upper-alpha {
+				margin: 0 10px;
+				&:before {
+					counter-increment: section;
+					content: counter(section, upper-alpha)  ".";
+					margin-right: 3px;
+				}
+			}
+		}
+	}
+}
+
+.quiz-header {
+	margin: 20px 0;
+	#quiz-nav {
+		background: #fff;
+		border: none;
+		box-shadow: none;
+		background: none;
+		padding: 0;
+		.inner {
+			width: $mainWidth - 20px;
+			border: 1px solid #eee;
+			border-radius: 4px;
+			background: #fff;
+			padding: 10px 0;
+			overflow: hidden;
+			z-index: 1;
+			.cell {
+				margin: 10px 0;
+			}
+			.btn {
+				margin: 5px;
+				.badge {
+					background: #fff;
+					position: relative;
+					top: 0px;
+					color: #999;
+				}
+			}
+		}
+
+		
+	}
+	.form-group {
+		overflow: hidden;
+	}
+}
+
+.num-list {
+	counter-reset: section;
+	.btn span:before {
+		counter-increment: section;
+		content: counter(section);
+	}
+}
+
+#quiz {
+	.question_content {
+		background: #f9f9f9;
+		min-height: 50px;
+		padding: 10px;
+	}
+	.alert {
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin:  0 0 0 -150px;
+		width: 300px;
+		z-index: 1;
+	}
+}
+
+.btn-grey {
+	background-color: #ddd;
+	border-color: #ccc;
+	color: #333;
+}
+
+
+
+
+.edit-page {
+	.header{
+		overflow: hidden;
+		.notice {
+			padding: 20px; 
+			margin: 20px 0;
+			background: lightyellow; 
+			border: 1px dotted #999;
+		}
+	}
+
+}
+
+
+// exam paper
+#exam_papers {
+	background: #fff;
+	.bs-docs-header {
+		position: relative;
+		padding: 30px 15px;
+		margin-bottom: 50px;
+		color: #cdbfe3;
+		text-align: center;
+		text-shadow: 0 1px 0 rgba(0,0,0,.1);
+		background-color: #6f5499;
+		background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+		background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+		h1 {
+			color: #fff;
+			font-size: 60px;
+		}
+	}
+
+	#paper-list {
+		.paper-box {
+			float: left;
+			 background-color: #eee;
+			 margin: 10px;
+			 padding: 10px;
+			 border-radius: 5px;
+		}
+	}
+
+	.options {
+		.form-group {
+			a.btn {
+				margin: 0 5px;
+			}
+		}
+	}
+	.nav {
+		> li {
+			position: relative;
+			display: block;
+			> div {
+				position: relative;
+				display: block;
+				padding: 10px 15px;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+

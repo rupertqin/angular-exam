@@ -1,0 +1,6 @@
+<div ng-controller="NotifyCtrl">
+    <div class="alert {{clazz}} alert-dismissable navbar-fixed-bottom animate-show" ng-show="show">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="stopTimeout()">&times;</button>
+        <strong>{{title}}!</strong> {{message}}
+    </div>
+</div>

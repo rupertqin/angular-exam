@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+     "name": "学科",
+    "option_values": [
+      {"id": 1, "value": "思想"},
+      {"id": 2, "value": "体育"},
+      {"id": 3, "value": "化学"}
+    ]
+  },
+  {
+    "id": 2,
+     "name": "年级",
+    "option_values": [
+      {"id": 4, "value": "不限"},
+      {"id": 5, "value": "6年级"}
+    ]
+  },  
+  {
+    "id": 1,
+     "name": "学期",
+    "option_values": [
+      {"id": 6, "value": "全部"},
+      {"id": 7, "value": "上"},
+      {"id": 8, "value": "下"}
+    ]
+  },
+  {
+    "id": 2,
+     "name": "版本",
+    "option_values": [
+      {"id": 9, "value": "全部"},
+      {"id": 10, "value": "人教版"},
+      {"id": 11, "value": "上海版"}
+
+    ]
+  }
+]

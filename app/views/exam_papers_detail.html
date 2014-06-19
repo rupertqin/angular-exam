@@ -1,0 +1,20 @@
+<div id="paper-list">
+    <div class="paper-box" ng-repeat="itemBox in itemBoxes">
+        <input type="checkbox" ng-model="itemBox.checked">
+        <div class="dropdown">
+            <button data-toggle="dropdown" type="button" class="btn btn-default btn-xs">
+                <span class="glyphicon glyphicon-cog"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href=" ">在线预览</a></li>
+                <li><a href=" ">word 预览</a></li>
+                <li><a href=" ">草卷预览</a></li>
+            </ul>
+        </div>
+        <img src="">
+        <p>{{itemBox.name}}</p>
+        <span>
+            <button>进入组卷</button>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+<div class="factory">
+    <div class="ready-ball">
+        <a 
+            ng-repeat="ball in readyBalls"
+            data-drag="true"  
+            jqyoui-draggable="{}"
+            data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" 
+            ng-model="yellowBall"
+            class="ball"
+            ng-class="ball.type"
+            >
+        </a>
+    </div>
+    <div 
+        class="factory-container" 
+        ng-class="{'hight-line': hightLine}"
+        data-drop="true" 
+        jqyoui-droppable="{onDrop: 'cloneBall(balls)', onOut: 'dragOut()', onOver: 'dragOver()'}"
+        data-jqyoui-options="{accept: '.ready-ball .ball'}" 
+        style="background-image: url({{question.connecting_on_pic_image}})" 
+        >
+        <a 
+            ng-repeat="ball in question.balls track by $index"
+            ng-model="balls"
+            data-drag="true"  
+            jqyoui-draggable="{index: {{$index}}, onStart: 'startDragging(ball)', onStop: 'onStopDragging(ball)'}"
+            data-jqyoui-options="{}" 
+            class="ball {{ball.type}}"
+            ng-class="{active: ball.active}"
+            ng-click="triggerBall($event, ball)"
+            ng-dblclick="cleanLines(ball)"
+            style="position: absolute; left: {{ball.x}}px; top: {{ball.y}}px;"
+            >
+            <div 
+                class="popover" 
+                ng-class='{left: ball.type=="red", right: ball.type=="yellow"}'
+                ng-click='stopPopoverPropagation($event)'
+                >
+                <div class="arrow"></div>
+                <div class="popover-content">
+                    <textarea ng-model='ball.text'></textarea>
+                </div>
+            </div>
+        </a>
+        <svg width="100%" height="100%">
+            <line 
+                ng-repeat="pair in question.ballGroups track by $index"
+                ng-x1="{{indexCoords(pair[0], 'x')}}" 
+                ng-y1="{{indexCoords(pair[0], 'y')}}" 
+                ng-x2="{{indexCoords(pair[1], 'x')}}" 
+                ng-y2="{{indexCoords(pair[1], 'y')}}" 
+                stroke="lightblue" 
+                idx="{{$index}}"
+                stroke-width="5"/>
+        </svg>
+    </div>
+</div>
+<form 
+    action="/courses/1/student_files" 
+    method="POST" 
+    class="upload-image-form" 
+    enctype="multipart/form-data"
+    >
+    <input type="hidden" name="_method" value="POST">
+    <table class="connecting_on_pic_uploader">
+        <tr>
+            <td>选择图片：</td>
+            <td><input id="background_bg_image" name="attachment[uploaded_data]" type="file" accept="image/*"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="上传" class="btn btn-default confirm"></td>
+            <td><span class="btn btn-default dele-image" ng-click="deleteImage()">删除图片</span></td>
+        </tr>
+    </table>
+</form>

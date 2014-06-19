@@ -1,0 +1,41 @@
+<div id="exam_papers" class="clearfix">
+    <div class="bs-docs-header">
+        <h1>试卷中心</h1>
+        <p>欢迎molly使用教学邦万能题库系统</p>
+        <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div></div></div>
+    </div>
+    <div class="col-md-3">
+        <div ui-tree data-drag-enabled="false">
+            <ol class="nav" ui-tree-nodes="" ng-model="items">
+                <li 
+                    class="active" 
+                    ng-repeat="item in items" 
+                    ui-tree-node 
+                    ng-include="'items_renderer.html'"
+                    >
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div ui-view></div>
+</div>
+
+<script type="text/ng-template" id="items_renderer.html">
+    <div 
+        ui-tree-handle>
+        <i class="btn btn-success btn-xs" data-nodrag="" ng-click="toggle(this)">
+            <span class="glyphicon glyphicon-chevron-down" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed}"></span>
+        </i>
+        <a
+            ui-sref="examPapers.options({category: item.id})">
+            {{item.name}}
+        </a>
+    </div>
+    <ol class="nav" ui-tree-nodes="" ng-model="item.items" ng-class="{hidden: collapsed}">
+        <li ng-repeat="item in item.items" ui-tree-node ng-include="'items_renderer.html'">
+        </li>
+    </ol>
+</script>
+
+
+

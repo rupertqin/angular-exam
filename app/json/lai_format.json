@@ -1,0 +1,68 @@
+{
+    "subject": "数学·新课标·上旬卷第三单元 函数概念与性质（试卷总分100分   考试时间100分钟） `{table0}` 第Ⅰ卷 (选择题   共40分)   ", 
+    "groups": [
+        {
+            "name": "一、选择题：本大题共10小题，每小题4分，共40分．在每小题给出的四个选项中，只有一项是符合题目要求的．", 
+            "category": "multiple_answers_question", 
+            "questions": [
+                [
+                    {
+                        "content": "[k1][k2][k3]1．下列与函数<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48673/download?verifier=rHYjUtkvzfGSODeTFeFUGG3GXhu2L7zIGkPmZimn' />是同一函数的是A．<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48674/download?verifier=FOeG9KIIkJgf4wAncP2w9iloA2L8dvjGRGkr5SEX' />                     B．<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48675/download?verifier=Shi5B5Xrr15KTDEUXvAaUGOAHWU8dfBSNZVVMF4g' />                 C．<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48676/download?verifier=kEL5FNnYqzpxbsAy2bbXvmbvTObEgTxc6tltYrd9' />                     D．<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48677/download?verifier=wd0RbJrxOijo7iP9xczLLZo4fMWRF33gCLm49sXh' />", 
+                        "answers": [
+                            {
+                                "text": "rose", 
+                                "comments": "", 
+                                "weight": 100,
+                                "blank_id": "k1"
+                            }, 
+                            {
+                                "text": "cat", 
+                                "comments": "", 
+                                "weight": 100,
+                                "blank_id": "k1"
+                            }, 
+                            {
+                                "text": "dog", 
+                                "comments": "", 
+                                "weight": 100,
+                                "blank_id": "k2"
+                            }, 
+                            {
+                                "text": "finish", 
+                                "comments": "", 
+                                "weight": 100,
+                                "blank_id": "k2"
+                            }, 
+                            {
+                                "text": "mi", 
+                                "comments": "", 
+                                "weight": 100,
+                                "blank_id": "k3"
+                            }, 
+                            {
+                                "text": "yu", 
+                                "comments": "", 
+                                "weight": 100,
+                                "blank_id": "k3"
+                            }, 
+                            {
+                                "text": "yu", 
+                                "comments": "", 
+                                "weight": 100,
+                                "blank_id": "k15"
+                            }
+                        ], 
+                        "solution": "两个函数的定义域和对应法则相同，就是同一函数。选择支A中函数和已知的函数定义域相同，但是值域不同，函数<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48673/download?verifier=rHYjUtkvzfGSODeTFeFUGG3GXhu2L7zIGkPmZimn' />的值域是R，函数<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48678/download?verifier=w9FpC1txN9Zv0Xu1O3PawXgeV5Z0wHr9x3qfdLHN' />的值域是<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48679/download?verifier=TKLqZv4gggyrTFdzJh5rMPuV2Bd7d8JtrvQMXe1S' />；选择支B中函数和已知函数的定义域不同，<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48675/download?verifier=Shi5B5Xrr15KTDEUXvAaUGOAHWU8dfBSNZVVMF4g' />的定义域为<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48680/download?verifier=mtS4xZbVf4oVK7Z9VQolr5Y8ndBP2SCCvVwn3ZCT' />；选择支C中函数和已知函数的定义域不同，<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48676/download?verifier=kEL5FNnYqzpxbsAy2bbXvmbvTObEgTxc6tltYrd9' />的定义域是<img src='http://edu10011.jiaoxuebang.com/courses/378/files/48681/download?verifier=fyV2y6xEORcUrQ2uCIbLoo5cZtAWobOTYdjE5810' />；选择支D中, <img src='http://edu10011.jiaoxuebang.com/courses/378/files/48677/download?verifier=wd0RbJrxOijo7iP9xczLLZo4fMWRF33gCLm49sXh' /><img src='http://edu10011.jiaoxuebang.com/courses/378/files/48682/download?verifier=8Teyuhfz5pqUbVFxVw6FkhE8QXBLYnkLJjydbBLZ' />，函数和已知函数的定义域相同，对应法则也相同，所以它们是同一函数。", 
+                        "sub_category": "fill_in_multiple_blanks_question"
+                    }
+                ]
+            ], 
+            "question_count": 11, 
+            "score": {
+                "per_question": "4", 
+                "total": "40"
+            }
+        }
+    ], 
+    "category": "unknown"
+}

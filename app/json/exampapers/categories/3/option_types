@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+     "name": "学科",
+    "option_values": [
+      {"id": 1, "value": "历史"},
+      {"id": 2, "value": "政治"},
+      {"id": 3, "value": "化学"}
+    ]
+  },
+  {
+    "id": 2,
+     "name": "年级",
+    "option_values": [
+      {"id": 4, "value": "不限"},
+      {"id": 5, "value": "6年级"}
+    ]
+  }
+]

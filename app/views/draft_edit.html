@@ -1,0 +1,55 @@
+<div class="container" >
+    <div id="quiz" class="row edit-page">
+        <!-- <h2>{{ 'HEADLINE' | translate }}</h2> -->
+        <form 
+            ng-submit='submitQuiz($event)' 
+            class="form-horizontal" 
+            type="POST" 
+            action="http://www.sina.com.cn"
+            ng-show='quiz'
+            >
+            <div  class="header">
+
+                <div class="notice">
+                    <h1>修正提示</h1>
+                    <div>
+                        <h4>三要：</h4>
+                        <ol>
+                            <li>要用一，二，三形式定义大题号，否则不能转换试卷。</li>
+                            <li>如全部答案放在整卷尾部,则要在出题部分尾部和答案部分之前添加参考答案4个字</li>
+                            <li>大小题号及ABCD选项最好要后接分隔符。 如 ,.:、</li>
+                        </ol>
+                        <h4>三不要：</h4>
+                        <ol>
+                            <li>图片位置不要混在一起，单题间图片分开</li>
+                            <li>不要留有空白答卷栏</li>
+                            <li>不要留有密封栏信息</li>
+                        </ol>
+                    </div>
+                </div>
+                <button 
+                    type="submit" 
+                    class="btn btn-primary btn-lg" 
+                    ng-disabled='ref.btnDisabled'
+                    >
+                    生成草卷
+                </button>
+            </div>
+            <div>
+                
+                <img ng-show='ref.submitBtn.current.disabled' src="images/ajax-loader-medium-444.gif">
+            </div>
+            <div 
+                class="content" 
+                ng-model='quiz'
+                contenteditable
+                >
+            </div>
+            
+        </form>
+        <h1 ng-hide='quiz'>正在努力加载中... <img src="images/ajax-loader-medium-444.gif"></h1>
+        <div id="ajax_authenticity_token" ng-bind='token' style="display: none;"></div>
+    </div>
+</div>
+
+

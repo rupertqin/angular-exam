@@ -1,0 +1,19 @@
+[
+    {"id": 1, "name": "中小学", "parent_id": null, "leaf?": false},
+    {"id": 2, "name": "小学", "parent_id": 1, "leaf?": false},
+    {"id": 3, "name": "中学", "parent_id": 1, "leaf?": false},
+    {"id": 4, "name": "大中专", "parent_id": null, "leaf?": false},
+    {"id": 5, "name": "中专", "parent_id": 4, "leaf?": false},
+    {"id": 6, "name": "大专", "parent_id": 4, "leaf?": false},
+    {"id": 7, "name": "特大专", "parent_id": 4, "leaf?": true},
+    {"id": 8, "name": "b-3-1", "parent_id": 7, "leaf?": true},
+    {"id": 9, "name": "b-3-2", "parent_id": 7, "leaf?": true},
+    {"id": 10, "name": "b-3-3", "parent_id": 7, "leaf?": true},
+    {"id": 11, "name": "b-3-2-1", "parent_id": 10, "leaf?": true},
+    {"id": 12, "name": "b-3-2-2", "parent_id": 10, "leaf?": true},
+    {"id": 13, "name": "b-3-2-2-1", "parent_id": 12, "leaf?": true},
+    {"id": 14, "name": "b-3-2-2-2", "parent_id": 12, "leaf?": true},
+    {"id": 15, "name": "b-3-2-2-2-1", "parent_id": 14, "leaf?": true},
+    {"id": 16, "name": "b-3-2-2-2-1-1", "parent_id": 15, "leaf?": true},
+    {"id": 17, "name": "b-3-2-2-2-1-1-1", "parent_id": 16, "leaf?": true}
+]

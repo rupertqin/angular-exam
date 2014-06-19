@@ -1,0 +1,375 @@
+<div class="container" >
+    <div id="quiz" class="row">
+    <!-- <h2>{{ 'HEADLINE' | translate }}</h2> -->
+
+    <div 
+        class="alert" 
+        ng-class='ref.status.alertClass' 
+        ng-show='ref.status.show'
+        >
+        {{ref.status.text}}
+    </div>
+    <div class="quiz-header" data-drag="true" jqyoui-draggable data-jqyoui-options="{revert: 'invalid'}">
+        <div class="form-group well"  id="quiz-nav" quiz-panel>
+            <div class="inner">
+                <div class="col-sm-12 num-list">
+                    <span ng-repeat='(group_idx, group) in quiz.groups'>
+                        <span ng-repeat='(question_set_idx, question_set) in group.question_sets'>
+                            <span ng-repeat='(question_idx, question) in question_set'>
+                                <span>
+                                    <a 
+                                        href='#g_{{group_idx}}_s_{{question_set_idx}}_q_{{question_idx}}'
+                                        du-smooth-scroll
+                                        du-scrollspy
+                                        offset='130'
+                                        class="btn btn-xs"
+                                        ng-class='{
+                                            "btn-success": question.checked && question.question_type !== "text_only_question", 
+                                            "btn-danger": !question.checked , 
+                                            "btn-grey": question.question_type == "text_only_question" 
+                                        }'
+                                        >
+                                        <span></span>
+                                    </a> 
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form 
+        ng-submit='submitQuiz($event)' 
+        class="form-horizontal" 
+        role="form" 
+        type="POST" 
+        action="http://www.sina.com.cn"
+        ng-show='ref.panel'
+        >
+        <div class="form-group">
+            <label class="col-sm-2 control-label">标题：</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" ng-model="quiz.subject" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">类别：</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" ng-model="quiz.category" />
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-default btn-lg" ng-click="addGroup()">
+                <span class="glyphicon glyphicon-plus"></span>增加大题
+            </button>
+        </div>
+        <div class="question_group" ng-repeat="(group_idx, group) in quiz.groups">
+            <div class="form-group group-title">
+                <label class="col-sm-2 control-label">
+                    大题
+                    <span></span>
+                </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" ng-model="group.name" />
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-default btn-lg" ng-click="addQuestion(group.question_sets[0], 0)">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                    <button type="button" class="btn btn-default btn-lg" ng-click="removeGroup(group_idx)">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
+            </div>
+            <div 
+            class="panel-primary" 
+            ng-class='{panel: question_set[0].question_type == "text_only_question"}' 
+            ng-repeat='(question_set_idx, question_set) in group.question_sets'
+            >
+                <!-- Default panel contents -->
+                <div class="panel-heading" ng-hide='question_set[0].question_type !== "text_only_question"'>
+                    <h3 class="panel-title pull-left">
+                        子母题
+                    </h3>
+                </div>
+                <div 
+                    class="question {{question.question_type}}" 
+                    ng-class='{"panel-body": question_set[0].question_type == "text_only_question"}'
+                    ng-repeat="(question_idx, question) in question_set"
+                    id="g_{{group_idx}}_s_{{question_set_idx}}_q_{{question_idx}}"
+                    >
+                    <div 
+                    class="panel panel-success"
+                    ng-class='{"panel-info": question.question_type == "text_only_question"}'
+                    >
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <div class="panel-title col-xs-2">
+                                <select 
+	                                ng-model="question.question_type" 
+	                                ng-options="type.name as type.locale for type in question_types | filterQuestionType:question.question_type:question_idx"
+	                                ng-focus="beforeSelectChange(question, $event)"
+	                                ng-change="selectQuestionType(question)"
+	                                ng-init='question.last_question_type = question.question_type'
+	                                >
+                                </select>
+                                
+                            </div>
+                            <div class="col-xs-8">
+                                <label ng-hide='question.question_type=="text_only_question"'>
+                                    分数：
+                                    <input 
+                                    type="text" 
+                                    ng-model='question.points_possible' 
+                                    ng-init='question.points_possible = group.points_possible' 
+                                    >
+                                </label>
+                                
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="pull-right">
+                                    <span
+                                    class="btn btn-xs"
+                                    ng-class='{
+                                        "btn-success": question.checked && question.question_type !== "text_only_question", 
+                                        "btn-danger": !question.checked , 
+                                        "btn-grey": question.question_type == "text_only_question" 
+                                    }'
+                                    >
+                                        <i>&nbsp;</i>
+                                    </span>  
+                                    <button 
+                                    type="button" 
+                                    class="btn btn-default btn-xs" 
+                                    ng-click='addQuestion(question_set, question_idx)'
+                                    >
+                                        <span class='glyphicon glyphicon-plus'></span>
+                                    </button>
+                                    <button 
+                                    type="button" 
+                                    class="btn btn-default btn-xs" 
+                                    ng-click='removeQuestion(question_set, question_idx)'
+                                    >
+                                        <span class='glyphicon glyphicon-trash'></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div
+	                            contenteditable
+	                            class="question_content"
+	                            ng-model='question.question_text'
+	                            >
+                            </div>
+                        </div>
+                        <!-- List group -->
+                        <ul class="list-group" ng-hide='question.question_type === "text_only_question"'>
+                            <li class="list-group-item answer bg-info" ng-hide='question.question_type === "essay_question"'>
+                                <div class="col-sm-1">
+                                    <b>答案：</b> 
+                                </div>
+                                <div class="col-sm-9" ng-switch on="question.question_type" >
+                                    <div ng-if="question.question_type == 'multiple_choice_question' || 
+                                                question.question_type == 'true_false_question' ">
+                                        <ul 
+	                                        class="choice tabtable" 
+	                                        ng-class='{"list-alpha": question.question_type == "multiple_choice_question"}'
+	                                        >
+                                            <li ng-repeat="answer in question.answers track by $index">
+                                                <label>
+                                                    <input 
+                                                        type='radio' 
+                                                        ng-model='answer.weight' 
+                                                        value='100'
+                                                        name="multiple_choice_question_group_{{group_idx}}_question_set_{{question_set_idx}}_question_{{question_idx}}"
+                                                        ng-change='chooseRadios(question, question.answers, answer)'
+                                                        >
+                                                    {{answer.text}}
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div ng-switch-when="multiple_answers_question">
+                                        <ul class="choice list-alpha tabtable">
+                                            <li ng-repeat="answer in question.answers track by $index">
+                                                <label>
+                                                    <input 
+                                                        type='checkbox' 
+                                                        ng-model='answer.weight'
+                                                        ng-checked='answer.weight==100'
+                                                        ng-true-value='100'
+                                                        ng-false-value='0'
+                                                        >
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div ng-switch-when="matching_question">
+                                        <ol class="tabtable">
+                                            <li ng-repeat="answer in question.answers track by $index">
+                                                <input 
+                                                    type='text' 
+                                                    ng-model='answer.text'
+                                                    >
+                                                <input 
+                                                    type='text' 
+                                                    ng-model='answer.matching_text'
+                                                    >
+
+                                                <button type="button" ng-click='delBlank(question.answers, $index)' class="btn btn-default btn-xs">
+                                                    <span class='glyphicon glyphicon-remove'></span>
+                                                </button>
+                                            </li>
+                                        </ol>
+                                        <div>
+                                            <button type="button" ng-click='addChoice(question)' class="btn btn-default btn-xs">
+                                                <span class='glyphicon glyphicon-plus'></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div ng-switch-when="connecting_lead_question">
+                                        <div>
+                                            <button 
+	                                            type="button" 
+	                                            class="btn btn-default" 
+	                                            ng-class="{active: question.connecting_lead_linesNum!=3}" 
+	                                            ng-click='question.connecting_lead_linesNum=2'
+	                                            >两排
+                                            </button>
+                                            <button 
+	                                            type="button" 
+	                                            class="btn btn-default" 
+	                                            ng-class="{active: question.connecting_lead_linesNum==3}" 
+	                                            ng-click='question.connecting_lead_linesNum=3'
+	                                            >三排
+                                            </button>
+                                        </div>
+                                        <ol class="tabtable">
+                                            <li ng-repeat="answer in question.answers track by $index">
+                                                <input 
+                                                    type='text' 
+                                                    ng-model='answer.left'
+                                                    >
+                                                <input 
+                                                    type='text' 
+                                                    ng-model='answer.center'
+                                                    >
+                                                <input 
+                                                    type='text' 
+                                                    ng-model='answer.right'
+                                                    ng-show='question.connecting_lead_linesNum==3'
+                                                    >
+
+                                                <button type="button" ng-click='delBlank(question.answers, $index)' class="btn btn-default btn-xs">
+                                                    <span class='glyphicon glyphicon-remove'></span>
+                                                </button>
+                                            </li>
+                                        </ol>
+                                        <div>
+                                            <button type="button" ng-click='addChoice(question)' class="btn btn-default btn-xs">
+                                                <span class='glyphicon glyphicon-plus'></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div ng-switch-when="connecting_on_pic_question" ><div  connecting-pic></div></div>
+                                    <ul ng-if="question.question_type == 'fill_in_multiple_blanks_question' || 
+                                        question.question_type == 'drag_and_drop_question' || 
+                                        question.question_type == 'fill_in_blanks_subjective_question' || 
+                                        question.question_type == 'multiple_dropdowns_question' ">
+                                        <li 
+                                            class="list-blanks" 
+                                            ng-repeat="answer in question.answers track by $index"
+                                            ng-class="{
+                                                'tabtable': question.question_type == 'multiple_dropdowns_question'
+                                            }"
+                                            >
+                                            <span ng-bind="answer.id + ': '"></span> 
+                                            <label class="upper-alpha" ng-repeat="blank in answer.blanks track by $index" >
+                                                <input 
+                                                    ng-show="question.question_type == 'multiple_dropdowns_question' "
+                                                    type='radio' 
+                                                    value='100' 
+                                                    ng-model='blank.weight'
+                                                    name='multiple_dropdowns_question_group_{{group_idx}}_question_set_{{question_set_idx}}_question_{{question_idx}}_blank_{{$parent.$index}}' 
+                                                    ng-change='chooseRadios(question, answer.blanks, blank)'
+                                                    >
+                                                <input 
+                                                    type='text' 
+                                                    ng-model="blank.text" 
+                                                    >
+                                                <button 
+                                                    type="button" 
+                                                    class="btn btn-default btn-xs" 
+                                                    ng-click='delBlank(answer.blanks, $index)'
+                                                    ng-hide="question.question_type == 'drag_and_drop_question'"
+                                                    >
+                                                    <span class='glyphicon glyphicon-remove'></span>
+                                                </button>
+                                            </label>
+                                            <button 
+                                                type="button" 
+                                                class="btn btn-default btn-xs" 
+                                                ng-click='addBlank(question, answer.id, answer.blanks)'
+                                                ng-hide="question.question_type == 'drag_and_drop_question'"
+                                                >
+                                                <span class='glyphicon glyphicon-plus'></span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-2" ng-if="question.question_type == 'multiple_choice_question' || question.question_type == 'multiple_answers_question' ">
+                                    <div class="pull-right">
+                                        <button type="button" ng-click='addChoice(question)' class="btn btn-default btn-xs">
+                                            <span class='glyphicon glyphicon-plus'></span>
+                                        </button>
+                                        <button type="button" ng-click='delChoice(question)' class="btn btn-default btn-xs">
+                                            <span class='glyphicon glyphicon-remove'></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- <span ng-bind="stringify(question.answers)"></span> -->
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="col-sm-1">
+                                    <b>解析：</b> 
+                                </div>
+                                <div
+                                contenteditable
+                                class="question_content col-sm-11"
+                                ng-model='question.solution_content'
+                                >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="list-group" ng-show='question_set[0].question_type === "text_only_question"'>
+                    <li class="list-group-item">
+                    </li>
+                    <li class="list-group-item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button 
+                type="submit" 
+                class="btn btn-primary btn-lg" 
+                ng-disabled='ref.submitBtn.current.disabled'
+                ng-bind="ref.submitBtn.current.text"
+                >
+            </button>
+            <img ng-show='ref.submitBtn.current.disabled' src="images/ajax-loader-medium-444.gif">
+        </div>
+    </form>
+    <h1 ng-hide='ref.panel'>正在努力加载中... <img src="images/ajax-loader-medium-444.gif"></h1>
+    <div id="ajax_authenticity_token" ng-bind='token' style="display: none;"></div>
+</div>
+
+

@@ -1,0 +1,375 @@
+{
+    "subject" : "灵石一中高三语文试卷",
+    "category" : "期中考试",
+    "images_hash" : "   ",
+    "groups" : [
+        {
+            "category" : "all_question",
+            "name" : "三年后你会成为富翁吗",
+            "question_sets": [
+                [   
+                    {
+                        "question_type" : "multiple_dropdowns_question",
+                        "question_text" : "在湖边[blank1]钓鱼，你忽然看到湖里翻涌起很大的[blank2]水波，你认为那[blank3]水波是因为什么而形成的？",
+                        "points_possible" : "1",
+                        "answers" : [
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank3", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            }
+                        ],
+                        "solution_content" : "1. 选“湖里的水怪”你性格很率直，有什么说什么？心里从来也藏不住任何秘密，而且对于自己看不惯的事情，总是当着人家的面就指出来，这样往往让人下不了台，朋友和恋人都会因为你这一点离你而去。2. 选“地震”你是一个很喜欢钻牛角尖的人，即使明知道是自己错了，却死也不承认，而且如果想让你道歉那是不可能的事情。一点不顺心的事情，就会让你生气，而且还不会自己调节情绪。总是把自己和别人逼进死角。3. 选“巨型大鱼”你交际能力很强，但是千万不要有利益冲突，如果有利益冲突的时候，你就会变得很自私，不管什么时候你都是把自己放在第一位的，只在乎自己的感觉，不会替别人过多的考虑，更不会站在别人的角度想问题。"
+                    },
+                    {
+                        "question_type" : "fill_in_multiple_blanks_question",
+                        "question_text" : "在湖边[blank1]，你忽然看到湖里翻涌起很大的[blank2]，你认为那[blank3]是因为什么而形成的？",
+                        "points_possible" : "1",
+                        "answers" : [
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank3", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            }
+                        ],
+                        "solution_content" : "1. 选“湖里的水怪”你性格很率直，有什么说什么？心里从来也藏不住任何秘密，而且对于自己看不惯的事情，总是当着人家的面就指出来，这样往往让人下不了台，朋友和恋人都会因为你这一点离你而去。2. 选“地震”你是一个很喜欢钻牛角尖的人，即使明知道是自己错了，却死也不承认，而且如果想让你道歉那是不可能的事情。一点不顺心的事情，就会让你生气，而且还不会自己调节情绪。总是把自己和别人逼进死角。3. 选“巨型大鱼”你交际能力很强，但是千万不要有利益冲突，如果有利益冲突的时候，你就会变得很自私，不管什么时候你都是把自己放在第一位的，只在乎自己的感觉，不会替别人过多的考虑，更不会站在别人的角度想问题。"
+                    },
+                    {
+                        "question_type" : "multiple_choice_question",
+                        "question_text" : "如果你是大胖子，正在努力减肥时，你的朋友却想请你吃大餐，<br>你直觉他的心态是什么？<br>A.只是顺便叫你吃饭没有什么意思<br>B.根本就是故意取笑你看扁你<br>C.逗你开心希望你轻松面对减肥<br>D.心疼你挨饿减肥太辛苦<br>E.考验你减肥的意志力够不够坚强",
+                        "points_possible" : "1",
+                        "choices" : [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "answers" : [
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            }
+                        ],
+                        "solution_content" : "选“考验你减肥的意志力够不够坚强”的朋友：你是个潜力无穷的理财高手，三年后的你虽不会大富，却也是个绩优股。这类型的人学习能力很强，开始可以判断分析，因此很有机会成为绩优股。"
+                    },
+                    {
+                        "question_type" : "multiple_answers_question",
+                        "question_text" : "看电视的时候，电视剧中最令你厌恶的角色是：<br>A.做作的女主角<br>B.三八又浮夸的女配角<br>C.邪恶的大反派<br>D.爱耍帅的男主角",
+                        "points_possible" : "1",
+                        "choices" : [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                        ],
+                        "answers" : [
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            }
+                        ],
+                        "solution_content" : "有着热血青年本质的你，总是一心向上，不畏艰难令人动容，单枪匹马对抗世界，有孤独的悲壮。也说不出何以必然的你，只知闷着头往前冲，一下就因为思想不周而失败，甚至拖累别人，让人恨你的一意孤行，最闷的是不能怪你，因为你是那么努力啊！"
+                    },
+                    {
+                        "question_type" : "true_false_question",
+                        "question_text" : "在湖边钓鱼，你忽然看到湖里翻涌起很大的水波，你认为那水波是因为什么而形成的？<br>A.湖里的水怪<br>B.地震<br>C.巨型大鱼",
+                        "points_possible" : "1",
+                        "choices" : [
+                            "A",
+                            "B",
+                            "C"
+                        ],
+                        "answers" : [
+                            {
+                                "text" : "正确",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "错误",
+                                "comment" : "",
+                                "weight" : 100
+                            }
+                        ],
+                        "solution_content" : "1. 选“湖里的水怪”你性格很率直，有什么说什么？心里从来也藏不住任何秘密，而且对于自己看不惯的事情，总是当着人家的面就指出来，这样往往让人下不了台，朋友和恋人都会因为你这一点离你而去。2. 选“地震”你是一个很喜欢钻牛角尖的人，即使明知道是自己错了，却死也不承认，而且如果想让你道歉那是不可能的事情。一点不顺心的事情，就会让你生气，而且还不会自己调节情绪。总是把自己和别人逼进死角。3. 选“巨型大鱼”你交际能力很强，但是千万不要有利益冲突，如果有利益冲突的时候，你就会变得很自私，不管什么时候你都是把自己放在第一位的，只在乎自己的感觉，不会替别人过多的考虑，更不会站在别人的角度想问题。"
+                    }
+                    
+                ],
+                [   
+                    {
+                        "question_type" : "text_only_question",
+                        "question_text" : "在湖边[blank1]钓鱼，你忽然看到湖里翻涌起很大的[blank2]水波，你认为那[blank3]水波是因为什么而形成的？",
+                        "points_possible" : "1",
+                        "answers" : [],
+                        "solution_content" : ""
+                    },
+                    {
+                        "question_type" : "multiple_dropdowns_question",
+                        "question_text" : "在湖边[blank1]钓鱼，你忽然看到湖里翻涌起很大的[blank2]水波，你认为那[blank3]水波是因为什么而形成的？",
+                        "points_possible" : "1",
+                        "answers" : [
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank3", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            }
+                        ],
+                        "solution_content" : "1. 选“湖里的水怪”你性格很率直，有什么说什么？心里从来也藏不住任何秘密，而且对于自己看不惯的事情，总是当着人家的面就指出来，这样往往让人下不了台，朋友和恋人都会因为你这一点离你而去。2. 选“地震”你是一个很喜欢钻牛角尖的人，即使明知道是自己错了，却死也不承认，而且如果想让你道歉那是不可能的事情。一点不顺心的事情，就会让你生气，而且还不会自己调节情绪。总是把自己和别人逼进死角。3. 选“巨型大鱼”你交际能力很强，但是千万不要有利益冲突，如果有利益冲突的时候，你就会变得很自私，不管什么时候你都是把自己放在第一位的，只在乎自己的感觉，不会替别人过多的考虑，更不会站在别人的角度想问题。"
+                    },
+                    {
+                        "question_type" : "fill_in_multiple_blanks_question",
+                        "question_text" : "在湖边[blank1]，你忽然看到湖里翻涌起很大的[blank2]，你认为那[blank3]是因为什么而形成的？",
+                        "points_possible" : "1",
+                        "answers" : [
+                            {
+                                "blank_id": "blank1", 
+                                "text" : "钓鱼",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank2", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "blank_id": "blank3", 
+                                "text" : "水波",
+                                "comment" : "",
+                                "weight" : 100
+                            }
+                        ],
+                        "solution_content" : "1. 选“湖里的水怪”你性格很率直，有什么说什么？心里从来也藏不住任何秘密，而且对于自己看不惯的事情，总是当着人家的面就指出来，这样往往让人下不了台，朋友和恋人都会因为你这一点离你而去。2. 选“地震”你是一个很喜欢钻牛角尖的人，即使明知道是自己错了，却死也不承认，而且如果想让你道歉那是不可能的事情。一点不顺心的事情，就会让你生气，而且还不会自己调节情绪。总是把自己和别人逼进死角。3. 选“巨型大鱼”你交际能力很强，但是千万不要有利益冲突，如果有利益冲突的时候，你就会变得很自私，不管什么时候你都是把自己放在第一位的，只在乎自己的感觉，不会替别人过多的考虑，更不会站在别人的角度想问题。"
+                    },
+                    {
+                        "question_type" : "multiple_choice_question",
+                        "question_text" : "如果你是大胖子，正在努力减肥时，你的朋友却想请你吃大餐，<br>你直觉他的心态是什么？<br>A.只是顺便叫你吃饭没有什么意思<br>B.根本就是故意取笑你看扁你<br>C.逗你开心希望你轻松面对减肥<br>D.心疼你挨饿减肥太辛苦<br>E.考验你减肥的意志力够不够坚强",
+                        "points_possible" : "1",
+                        "choices" : [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E"
+                        ],
+                        "answers" : [
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            }
+                        ],
+                        "solution_content" : "选“考验你减肥的意志力够不够坚强”的朋友：你是个潜力无穷的理财高手，三年后的你虽不会大富，却也是个绩优股。这类型的人学习能力很强，开始可以判断分析，因此很有机会成为绩优股。"
+                    },
+                    {
+                        "question_type" : "multiple_answers_question",
+                        "question_text" : "看电视的时候，电视剧中最令你厌恶的角色是：<br>A.做作的女主角<br>B.三八又浮夸的女配角<br>C.邪恶的大反派<br>D.爱耍帅的男主角",
+                        "points_possible" : "1",
+                        "choices" : [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                        ],
+                        "answers" : [
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 100
+                            },
+                            {
+                                "text" : "",
+                                "comment" : "",
+                                "weight" : 0
+                            }
+                        ],
+                        "solution_content" : "有着热血青年本质的你，总是一心向上，不畏艰难令人动容，单枪匹马对抗世界，有孤独的悲壮。也说不出何以必然的你，只知闷着头往前冲，一下就因为思想不周而失败，甚至拖累别人，让人恨你的一意孤行，最闷的是不能怪你，因为你是那么努力啊！"
+                    },
+                    {
+                        "question_type" : "true_false_question",
+                        "question_text" : "在湖边钓鱼，你忽然看到湖里翻涌起很大的水波，你认为那水波是因为什么而形成的？<br>A.湖里的水怪<br>B.地震<br>C.巨型大鱼",
+                        "points_possible" : "1",
+                        "choices" : [
+                            "A",
+                            "B",
+                            "C"
+                        ],
+                        "answers" : [
+                            {
+                                "text" : "正确",
+                                "comment" : "",
+                                "weight" : 0
+                            },
+                            {
+                                "text" : "错误",
+                                "comment" : "",
+                                "weight" : 100
+                            }
+                        ],
+                        "solution_content" : "1. 选“湖里的水怪”你性格很率直，有什么说什么？心里从来也藏不住任何秘密，而且对于自己看不惯的事情，总是当着人家的面就指出来，这样往往让人下不了台，朋友和恋人都会因为你这一点离你而去。2. 选“地震”你是一个很喜欢钻牛角尖的人，即使明知道是自己错了，却死也不承认，而且如果想让你道歉那是不可能的事情。一点不顺心的事情，就会让你生气，而且还不会自己调节情绪。总是把自己和别人逼进死角。3. 选“巨型大鱼”你交际能力很强，但是千万不要有利益冲突，如果有利益冲突的时候，你就会变得很自私，不管什么时候你都是把自己放在第一位的，只在乎自己的感觉，不会替别人过多的考虑，更不会站在别人的角度想问题。"
+                    }
+                    
+                ]
+            ]
+        }
+    ]
+    
+}

@@ -1,0 +1,167 @@
+{
+    "quiz_question": {
+        "assessment_question_id": 1, 
+        "assessment_question_version": 0, 
+        "category": null, 
+        "created_at": "2013-12-23T10:03:06+08:00", 
+        "id": 1, 
+        "migration_id": null, 
+        "override_option": null, 
+        "parent_id": null, 
+        "position": 1, 
+        "question_data": {
+            "points_possible": 1, 
+            "correct_comments": "", 
+            "incorrect_comments": "", 
+            "neutral_comments": "", 
+            "solution_content": "", 
+            "hardness": "normal", 
+            "tags": null, 
+            "question_type": "connecting_on_pic_question", 
+            "question_name": "试题", 
+            "name": "试题", 
+            "question_text": "", 
+            "answers": [
+                {
+                    "left": "ball-1", 
+                    "right": "ball-2", 
+                    "comments": "", 
+                    "id": 5338, 
+                    "match_left_id": 4447, 
+                    "match_right_id": 475
+                }, 
+                {
+                    "left": "", 
+                    "right": "", 
+                    "comments": "", 
+                    "id": 9085, 
+                    "match_left_id": 4917, 
+                    "match_right_id": 3177
+                }, 
+                {
+                    "left": "", 
+                    "right": "", 
+                    "comments": "", 
+                    "id": 3844, 
+                    "match_left_id": 6602, 
+                    "match_right_id": 3596
+                }, 
+                {
+                    "left": "", 
+                    "right": "", 
+                    "comments": "", 
+                    "id": 7093, 
+                    "match_left_id": 9134, 
+                    "match_right_id": 6768
+                }
+            ], 
+            "matches": {
+                "left": [
+                    {
+                        "match_id": 4447, 
+                        "text": ""
+                    }, 
+                    {
+                        "match_id": 4917, 
+                        "text": ""
+                    }, 
+                    {
+                        "match_id": 6602, 
+                        "text": ""
+                    }, 
+                    {
+                        "match_id": 9134, 
+                        "text": ""
+                    }
+                ], 
+                "right": [
+                    {
+                        "match_id": 475, 
+                        "text": ""
+                    }, 
+                    {
+                        "match_id": 3177, 
+                        "text": ""
+                    }, 
+                    {
+                        "match_id": 3596, 
+                        "text": ""
+                    }, 
+                    {
+                        "match_id": 6768, 
+                        "text": ""
+                    }
+                ]
+            }, 
+            "connecting_on_pic_position": "{\"1\":{\"x\":\"Infinity%\",\"y\":\"-Infinity%\",\"Grey\":true},\"2\":{\"x\":\"Infinity%\",\"y\":\"-Infinity%\",\"Grey\":false}}", 
+            "connecting_on_pic_image": "", 
+            "assessment_question_id": 1
+        }, 
+        "quiz_group_id": 2, 
+        "quiz_id": 1, 
+        "updated_at": "2014-06-12T08:00:31+08:00", 
+        "assessment_question": {
+            "assessment_question_bank_id": 1, 
+            "category": null, 
+            "context_id": 1, 
+            "context_type": "Course", 
+            "created_at": "2013-12-23T10:03:05+08:00", 
+            "deleted_at": null, 
+            "id": 1, 
+            "migration_id": null, 
+            "name": "试题", 
+            "parent_id": null, 
+            "position": 1, 
+            "question_data": {
+                "points_possible": 0, 
+                "correct_comments": "", 
+                "incorrect_comments": "", 
+                "neutral_comments": "", 
+                "solution_content": "", 
+                "hardness": "easy", 
+                "tags": [
+                    "easy", 
+                    "good"
+                ], 
+                "question_type": "multiple_choice_question", 
+                "question_name": "试题", 
+                "name": "试题", 
+                "question_text": "<ul style=\"list-style-type: none; color: #222222; font-size: 11px; line-height: 16px;\">
+                <li><span style=\"font-size: 12px; line-height: 18px;\">A 点击箭头确定其中一个正确答案</span></li>
+                <li><span style=\"font-size: 12px; line-height: 18px;\">B 点击箭头确定其中一个正确答案</span></li>
+                <li><span style=\"font-size: 12px; line-height: 18px;\">C 点击箭头确定其中一个正确答案</span></li>
+                <li><span style=\"font-size: 12px; line-height: 18px;\">D 点击箭头确定其中一个正确答案</span></li>
+                </ul>", 
+                "answers": [
+                    {
+                        "text": "", 
+                        "comments": "", 
+                        "weight": 0, 
+                        "id": 3784
+                    }, 
+                    {
+                        "text": "b", 
+                        "comments": "", 
+                        "weight": 100, 
+                        "id": 5118
+                    }, 
+                    {
+                        "text": "", 
+                        "comments": "", 
+                        "weight": 0, 
+                        "id": 7507
+                    }, 
+                    {
+                        "text": "", 
+                        "comments": "", 
+                        "weight": 0, 
+                        "id": 3696
+                    }
+                ], 
+                "assessment_question_id": 1
+            }, 
+            "updated_at": "2014-01-17T16:22:41+08:00", 
+            "workflow_state": "independently_edited"
+        }
+    }
+}

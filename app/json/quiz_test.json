@@ -1,0 +1,221 @@
+{
+    "subject": "2012-2013学年度第一学期高二电气控制考试试题", 
+    "groups": [
+        {
+            "name": "一、填空题（每空1分，共25分）", 
+            "category": "fill_in_multiple_blanks_question", 
+            "question_count": 9,
+            "score": {
+                "per_question": 1,
+                "total": 25
+            },
+            "questions": [
+                {
+                    "content": "1、电器是指用于接通和断开电路或对电路和电气设备进行（ ）、（ ）、（ ）的电工器件，低压电器按它在电气线路中的用途可分为（ ）（ ）。", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "2、在工厂电气控制系统中，通常将刀开关和（ ）合二为一，组成具有一定接通分断能力和短路分断能力的组合式电器。目前，使用最为广泛的刀开关是（ ）和（ ）。", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "parenthood": "parent", 
+                    "content": "3、板前接线的低压断路器允许安装在（ ），但板后接线的低压断路器必须安装在（ ）。", 
+                }, 
+                {   
+                    "parenthood": "child", 
+                    "content": "4、实现点动控制可以将（ ）直接与接触器的线圈串联，电动机的运行时间由（ ）的时间决定。", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "parenthood": "child", 
+                    "content": "5、实现连续控制可以将（ ）、（ ）与接触器的线圈串联，并在起动按钮两端并联接触器的（ ）。", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "6、为了实现两地同时控制一台电动机，必须在两个地点各安装一组起动和停止按钮。这两组起停按钮的接线方法是：( )相互并联，（ ）相互串联。", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "7、接触器是工厂电气控制系统中一种重要的低压电器。接触器有（ ）及（ ）功能，控制容量大，其控制对象主要是（ ），也可用于控制其他负载，如电路，电焊机，可用于（ ）和（ ）。", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "8、低压断路器又名（ ），是一种重要的控制和保护电器，能自动切断故障电流并兼有（ ）和（ ）功能。", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }
+            ]
+        }, 
+        {
+            "name": "二、选择题（每空3分，共15分）", 
+            "category": "dan_xuan", 
+            "questions": [
+                {
+                    "content": "1、在接触器联锁的正反转控制电路中，其连锁触头应该是对方接触器的（ ）。<br>A、主触头<br>B、常开辅助触头 <br>C、常闭辅助触头<br>D、常开触头", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [
+                        "A、主触头", 
+                        "B、常开辅助触头 ", 
+                        "C、常闭辅助触头", 
+                        "D、常开触头" 
+                    ], 
+                    "sub_category": "xuan_ze" 
+                }, 
+                {
+                    "content": "2、要使三相异步电动机反转，只要（ ）就能完成。<br>A、降低电压<br>B、降低电流<br>C、将任意两根电源线对调 <br>D、降低电路功率", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [
+                        "A、降低电压", 
+                        "B、降低电流", 
+                        "C、将任意两根电源线对调 ", 
+                        "D、降低电路功率" 
+                    ], 
+                    "sub_category": "xuan_ze" 
+                }, 
+                {
+                    "content": "3、按下复合按钮时（ ）
+A常开触头先闭合 B常闭触头先断开 C、常开、常闭触头同时动作", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "4、具有过载保护的接触器自锁控制电路中，实现过载保护的电气是（ ）
+<br/>A、熔断器
+B、热继电器 C、接触器
+D、电源开关", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [
+                        "A、熔断器", 
+                        "B、热继电器 ", 
+                        "C、接触器", 
+                        "D、电源开关" 
+                    ], 
+                    "sub_category": "xuan_ze" 
+                }, 
+                {
+                    "content": "5、（ ）是交流接触器发热的主要部件。
+A、线圈
+B、铁心 C、触头 D、衔铁", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [
+                        "A、线圈", 
+                        "B、铁心 ", 
+                        "C、触头 ", 
+                        "D、衔铁" 
+                    ], 
+                    "sub_category": "xuan_ze" 
+                }
+            ], 
+            "question_count": 6
+        }, 
+        {
+            "name": "三、判断题（每题2分，共10分）
+
+", 
+            "category": "pan_duan", 
+            "questions": [
+                {
+                    "content": "1、按钮帽做成不同的颜色是为了标明各个按钮的作用。（
+）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "2、接触器自锁触头的作用是保证松起动按钮后，接触器线圈仍能继续通电。（ ）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "3、热继电器既可做过载保护，又可做短路保护。（
+）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "4、按钮、接触器双重连锁正反转控制电路的优点是工作安全可靠，操作方便。（ ）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "5、在接触器联锁的正反转控制电路中，正、反转接触器有时可以同时闭合。（ ）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }
+            ], 
+            "question_count": 6
+        }, 
+        {
+            "name": "四、简答题。（共20分）
+
+", 
+            "category": "zhu_guan", 
+            "questions": [
+                {
+                    "content": "1、开启式负荷开关在安装和使用时应注意哪些问题？（7分）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "2、什么是欠电压保护？什么是失电压保护？（8分）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }, 
+                {
+                    "content": "3、按钮联锁正反转控制电路的优缺点？（5分）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ]
+                }
+            ], 
+            "question_count": 4
+        }, 
+        {
+            "name": "五、电路设计（30分）
+", 
+            "category": "zi_mu", 
+            "questions": [
+                {
+                    "content": " 
+某单位大门采用自动伸缩门，根据下列要求设计该自动伸缩门用三相笼型异步电动机的控制电路：（1）能实现开门、关门、停止；（2）门开到位和关到位有限位保护（采用行程开关）（3）有短路、过载、失电压，欠电压保护。
+（1）写出的用到的电气元件，及其作用。（10分）
+（2）画出电气原理图。（10分）
+（3）写出工作原理。（10分）", 
+                    "answer": "", 
+                    "solution": "", 
+                    "choices": [ ], 
+                    "sub_category": "background" 
+                }
+            ], 
+            "question_count": 1
+        }
+    ], 
+    "images_hash": { }, 
+    "tables_hash": { }, 
+    "category": "期中考试" 
+}
